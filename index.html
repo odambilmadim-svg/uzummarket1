@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#7000ff">
+  <title>Uzum Market — Onlayn xaridlar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><div class="container topline-inner"><span>📍 Toshkent</span><span class="top-message">Buyurtmangizni qulay va tez yetkazib beramiz</span><div class="top-links"><a href="#help">Yordam</a><a href="#orders">Buyurtmalarim</a><span>O‘zbekcha ▾</span></div></div></div>
+  <header class="header">
+    <div class="container header-main">
+      <a class="logo" href="#"><span class="logo-mark">u</span><span>uzum<span class="logo-light"> market</span></span></a>
+      <button class="catalog-btn" id="catalogBtn"><span class="catalog-icon">▦</span> Katalog</button>
+      <form class="search" id="searchForm"><input id="searchInput" type="search" placeholder="Mahsulotlar va turkumlarni qidiring" autocomplete="off"><button aria-label="Qidirish">⌕</button></form>
+      <nav class="header-actions">
+        <button class="head-action" id="loginBtn"><span>♙</span><small>Kirish</small></button>
+        <button class="head-action" id="favoritesBtn"><span>♡</span><small>Sevimlilar</small></button>
+        <button class="head-action cart-head" id="cartBtn"><span>🛒<b id="cartCount">0</b></span><small>Savat</small></button>
+      </nav>
+    </div>
+    <div class="container category-nav" id="categoryNav">
+      <a href="#" data-category="Hammasi">🔥 Aksiyalar</a><a href="#" data-category="Elektronika">Elektronika</a><a href="#" data-category="Maishiy texnika">Maishiy texnika</a><a href="#" data-category="Kiyim">Kiyim</a><a href="#" data-category="Poyabzal">Poyabzal</a><a href="#" data-category="Uy-ro‘zg‘or">Uy-ro‘zg‘or</a><a href="#" data-category="Go‘zallik">Go‘zallik</a><a href="#" data-category="Bolalar">Bolalar</a><a href="#" data-category="Sport">Sport</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Aksiyalar">
+      <button class="slider-arrow prev" id="heroPrev" aria-label="Oldingi">‹</button>
+      <div class="hero-track" id="heroTrack">
+        <article class="hero-slide active hero-purple"><div class="hero-copy"><span class="eyebrow">UZUM MARKET</span><h1>Har kuni yangi<br>imkoniyatlar!</h1><p>Sevimli mahsulotlaringizni qulay narxlarda toping</p><button class="hero-cta" data-scroll-products>Xarid qilish <b>→</b></button></div><div class="hero-art"><div class="hero-orb">U</div><div class="hero-box">✦</div><div class="hero-tag">−30%</div></div></article>
+        <article class="hero-slide hero-orange"><div class="hero-copy"><span class="eyebrow">MAXSUS TAKLIF</span><h1>Texnikaga<br>ajoyib chegirmalar</h1><p>Uy va kundalik hayot uchun kerakli mahsulotlar</p><button class="hero-cta" data-scroll-products>Xarid qilish <b>→</b></button></div><div class="hero-art"><div class="hero-orb">⚡</div><div class="hero-box">⌚</div><div class="hero-tag">TOP</div></div></article>
+        <article class="hero-slide hero-blue"><div class="hero-copy"><span class="eyebrow">YANGI MAVSUM</span><h1>Uslubingizni<br>yangilang</h1><p>Moda va kundalik kiyimlar bir joyda</p><button class="hero-cta" data-scroll-products>Xarid qilish <b>→</b></button></div><div class="hero-art"><div class="hero-orb">✧</div><div class="hero-box">👟</div><div class="hero-tag">NEW</div></div></article>
+      </div>
+      <button class="slider-arrow next" id="heroNext" aria-label="Keyingi">›</button>
+      <div class="hero-dots" id="heroDots"><button class="dot active"></button><button class="dot"></button><button class="dot"></button></div>
+    </section>
+
+    <section class="benefits">
+      <div><span>🚚</span><p><b>Tez yetkazib berish</b><small>Buyurtmangiz eshigingizgacha</small></p></div>
+      <div><span>↩</span><p><b>Oson qaytarish</b><small>Qulay qaytarish shartlari</small></p></div>
+      <div><span>🔒</span><p><b>Xavfsiz xarid</b><small>Ma'lumotlaringiz himoyalangan</small></p></div>
+      <div><span>💜</span><p><b>Katta tanlov</b><small>Minglab mahsulotlar</small></p></div>
+    </section>
+
+    <section class="section" id="productsSection">
+      <div class="section-heading"><div><h2 id="sectionTitle">Ommabop mahsulotlar</h2><p class="muted">Siz uchun tanlangan takliflar</p></div><div class="heading-controls"><select id="sortSelect" aria-label="Saralash"><option value="popular">Ommabop</option><option value="cheap">Arzonidan</option><option value="expensive">Qimmatidan</option></select><button class="outline-btn" id="showAllBtn">Barchasi <span>→</span></button></div></div>
+      <div class="chips" id="chips"><button class="chip active" data-filter="Hammasi">Barchasi</button><button class="chip" data-filter="Elektronika">Elektronika</button><button class="chip" data-filter="Maishiy texnika">Maishiy texnika</button><button class="chip" data-filter="Kiyim">Kiyim</button><button class="chip" data-filter="Uy-ro‘zg‘or">Uy-ro‘zg‘or</button><button class="chip" data-filter="Go‘zallik">Go‘zallik</button></div>
+      <div class="product-grid" id="productGrid"></div>
+      <div class="empty-state hidden" id="emptyState"><div>🔎</div><h3>Mahsulot topilmadi</h3><p>Boshqa nom bilan qidirib ko‘ring</p></div>
+      <button class="load-more" id="loadMore">Ko‘proq ko‘rsatish <span>↓</span></button>
+    </section>
+
+    <section class="promo-strip"><div><span class="promo-label">UZUM MARKET</span><h2>Qulay xarid — yaxshi kayfiyat!</h2><p>Kerakli mahsulotlar bir joyda jamlangan.</p></div><div class="promo-emoji">🎁</div></section>
+    <section class="section mini-section"><div class="section-heading"><div><h2>Nega bizni tanlashadi?</h2><p class="muted">Xaridni oson va yoqimli qilamiz</p></div></div><div class="reason-grid"><div><span>🛍️</span><b>Keng assortiment</b><p>Turli kategoriyalarda ko‘plab tanlovlar.</p></div><div><span>💳</span><b>Qulay to‘lov</b><p>Buyurtma rasmiylashtirish oson.</p></div><div><span>📦</span><b>Buyurtma nazorati</b><p>Buyurtmalaringizni kuzatib boring.</p></div></div></section>
+  </main>
+
+  <footer id="help"><div class="container footer-grid"><div><a class="logo footer-logo" href="#"><span class="logo-mark">u</span><span>uzum<span class="logo-light"> market</span></span></a><p>Onlayn xaridlar uchun qulay manzil.</p></div><div><b> xaridorlarga</b><a href="#help">Yordam markazi</a><a href="#orders">Buyurtmalar</a><a href="#help">Yetkazib berish</a></div><div><b>Kompaniya</b><a href="#help">Biz haqimizda</a><a href="#help">Hamkorlik</a><a href="#help">Aloqa</a></div><div><b>Biz bilan bog‘laning</b><p>☎ +998 78 555 ให้ 00 00</p><p>Har kuni 09:00–21:00</p></div></div><div class="container footer-bottom">© 2026 Uzum Market uslubidagi demo loyiha. Barcha huquqlar himoyalangan.</div></footer>
+
+  <div class="overlay hidden" id="overlay"></div>
+  <aside class="drawer hidden" id="cartDrawer"><div class="drawer-head"><h2>Savatingiz</h2><button class="close-btn" data-close>×</button></div><div class="drawer-content" id="cartItems"></div><div class="drawer-bottom" id="cartBottom"><div class="total-line"><span>Jami:</span><b id="cartTotal">0 so‘m</b></div><button class="primary-btn full" id="checkoutBtn">Xaridni rasmiylashtirish</button><small>To‘lov demo rejimida. Haqiqiy to‘lov ulanmagan.</small></div></aside>
+
+  <div class="modal hidden" id="productModal"><button class="close-btn modal-close" data-close>×</button><div id="productDetail"></div></div>
+  <div class="modal small-modal hidden" id="checkoutModal"><button class="close-btn modal-close" data-close>×</button><h2>Buyurtmani rasmiylashtirish</h2><p class="muted">Yetkazib berish ma'lumotlarini kiriting</p><form id="checkoutForm" class="checkout-form"><label>Ism-familiya<input required name="name" placeholder="Ismingiz"></label><label>Telefon raqam<input required name="phone" type="tel" placeholder="+998 90 123 45 67" pattern="[\+0-9 ()-]{9,}"></label><label>Manzil<input required name="address" placeholder="Viloyat, shahar, ko‘cha"></label><label>To‘lov turi<select name="payment"><option>Yetkazilganda naqd</option><option>Yetkazilganda karta</option></select></label><button class="primary-btn full" type="submit">Buyurtmani tasdiqlash</button></form></div>
+  <div class="modal small-modal hidden" id="loginModal"><button class="close-btn modal-close" data-close>×</button><h2>Shaxsiy kabinet</h2><p class="muted">Demo kirish oynasi</p><form id="loginForm" class="checkout-form"><label>Telefon raqam<input required type="tel" placeholder="+998 90 123 45 67"></label><button class="primary-btn full" type="submit">Davom etish</button></form></div>
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
